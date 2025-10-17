@@ -1,6 +1,6 @@
 const config = {
-    // url: "http://localhost:2030/springbootbookmanagementapi"
-    url: "http://localhost:1400"
+    url: "http://localhost:2030/springbootaccessoryapipracticelab"
+    // url: "http://localhost:1400"
 
     
 };
