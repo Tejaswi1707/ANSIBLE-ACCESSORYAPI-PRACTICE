@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./style.css";
-import config from "./config.js";
+
 
 export default function AccessoryManager() {
   const [activeSection, setActiveSection] = useState(
@@ -22,7 +22,7 @@ export default function AccessoryManager() {
   const [searchAttempted, setSearchAttempted] = useState(false); // new state
   const [editMode, setEditMode] = useState(false);
 
-  const baseUrl = `${config.url}/accessoryapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/accessoryapi`;
 
   useEffect(() => {
     localStorage.setItem("activeSection", activeSection);
